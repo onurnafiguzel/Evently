@@ -17,19 +17,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{CB9C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Events", "Events", "{F2382537-62D2-4D71-A054-BC9CBE708C9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evently.API", "src\API\Evently.API\Evently.API.csproj", "{FBA8E066-82CC-4285-B8DF-273360A28338}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evently.Modules.Events.Api", "src\Modules\Events\Evently.Modules.Events.Api\Evently.Modules.Events.Api.csproj", "{A8495ABD-4598-4424-AB70-B4253FA0DF2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evently.API", "src\API\Evently.API\Evently.API.csproj", "{FBA8E066-82CC-4285-B8DF-273360A28338}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D7A2613D-2697-4CB5-818D-B54D5840EAB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evently.Modules.Events.Domain", "src\Modules\Events\Evently.Modules.Events.Domain\Evently.Modules.Events.Domain.csproj", "{E3544F32-3A3C-4F7F-8162-8618DCD10FEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evently.Modules.Events.Domain", "src\Modules\Events\Evently.Modules.Events.Domain\Evently.Modules.Events.Domain.csproj", "{E3544F32-3A3C-4F7F-8162-8618DCD10FEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evently.Modules.Events.Application", "src\Modules\Events\Evently.Modules.Events.Application\Evently.Modules.Events.Application.csproj", "{D7D1017B-3125-4D49-A017-6B9C451D57EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evently.Modules.Events.Application", "src\Modules\Events\Evently.Modules.Events.Application\Evently.Modules.Events.Application.csproj", "{D7D1017B-3125-4D49-A017-6B9C451D57EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evently.Modules.Events.Infrastructure", "src\Modules\Events\Evently.Modules.Events.Infrastructure\Evently.Modules.Events.Infrastructure.csproj", "{6AA2A3CE-D654-4ADF-A001-302D644AA307}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evently.Modules.Events.Infrastructure", "src\Modules\Events\Evently.Modules.Events.Infrastructure\Evently.Modules.Events.Infrastructure.csproj", "{6AA2A3CE-D654-4ADF-A001-302D644AA307}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evently.Modules.Events.Presentation", "src\Modules\Events\Evently.Modules.Events.Presentation\Evently.Modules.Events.Presentation.csproj", "{E61239FC-789A-4F3F-B07C-EF4949E79EA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Evently.Modules.Events.Presentation", "src\Modules\Events\Evently.Modules.Events.Presentation\Evently.Modules.Events.Presentation.csproj", "{E61239FC-789A-4F3F-B07C-EF4949E79EA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{FBA8E066-82CC-4285-B8DF-273360A28338}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBA8E066-82CC-4285-B8DF-273360A28338}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBA8E066-82CC-4285-B8DF-273360A28338}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A8495ABD-4598-4424-AB70-B4253FA0DF2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8495ABD-4598-4424-AB70-B4253FA0DF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8495ABD-4598-4424-AB70-B4253FA0DF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8495ABD-4598-4424-AB70-B4253FA0DF2D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D7A2613D-2697-4CB5-818D-B54D5840EAB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D7A2613D-2697-4CB5-818D-B54D5840EAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7A2613D-2697-4CB5-818D-B54D5840EAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -74,7 +68,6 @@ Global
 		{CB9C30D9-E489-4E22-A5E4-3F6E0E60F3A3} = {B3AAD52E-AAC6-4A08-9A22-0B96D7EB660F}
 		{F2382537-62D2-4D71-A054-BC9CBE708C9F} = {CB9C30D9-E489-4E22-A5E4-3F6E0E60F3A3}
 		{FBA8E066-82CC-4285-B8DF-273360A28338} = {47EC43E8-0AE8-4E13-B029-78B36D771ACF}
-		{A8495ABD-4598-4424-AB70-B4253FA0DF2D} = {F2382537-62D2-4D71-A054-BC9CBE708C9F}
 		{E3544F32-3A3C-4F7F-8162-8618DCD10FEB} = {F2382537-62D2-4D71-A054-BC9CBE708C9F}
 		{D7D1017B-3125-4D49-A017-6B9C451D57EA} = {F2382537-62D2-4D71-A054-BC9CBE708C9F}
 		{6AA2A3CE-D654-4ADF-A001-302D644AA307} = {F2382537-62D2-4D71-A054-BC9CBE708C9F}
