@@ -1,10 +1,10 @@
-﻿using Evently.Modules.Events.Application;
-using Evently.Modules.Events.Application.Abstractions.Data;
+﻿using Evently.Modules.Events.Application.Abstractions.Data;
 using Evently.Modules.Events.Domain.Events;
 using Evently.Modules.Events.Infrastructure.Data;
 using Evently.Modules.Events.Infrastructure.Database;
 using Evently.Modules.Events.Infrastructure.Events;
 using Evently.Modules.Events.Presentation.Events;
+using FluentValidation;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
@@ -27,8 +27,10 @@ public static class EventsModule
     {
         services.AddMediatR(config =>
         {
-            config.RegisterServicesFromAssembly(AssemblyReference.Assembly);
+            config.RegisterServicesFromAssembly(Application.AssemblyReference.Assembly);
         });
+
+        services.AddValidatorsFromAssembly(Application.AssemblyReference.Assembly, includeInternalTypes: true);
 
         services.AddInfrastructure(configuration);
 
