@@ -1,5 +1,9 @@
-﻿using Evently.Modules.Events.Application.Abstractions.Data;
+﻿using Evently.Modules.Events.Application.Abstractions.Clock;
+using Evently.Modules.Events.Application.Abstractions.Data;
+using Evently.Modules.Events.Domain.Categories;
 using Evently.Modules.Events.Domain.Events;
+using Evently.Modules.Events.Domain.TicketTypes;
+using Evently.Modules.Events.Infrastructure.Clock;
 using Evently.Modules.Events.Infrastructure.Data;
 using Evently.Modules.Events.Infrastructure.Database;
 using Evently.Modules.Events.Infrastructure.Events;
@@ -45,6 +49,8 @@ public static class EventsModule
         NpgsqlDataSource npgsqlDataSource = new NpgsqlDataSourceBuilder(databaseConnectionString).Build();
         services.TryAddSingleton(npgsqlDataSource);
 
+        services.TryAddSingleton<IDateTimeProvider, DateTimeProvider>();
+
         services.AddScoped<IDbConnectionFactory, DbConnectionFactory>();
 
         services.AddDbContext<EventsDbContext>(options =>
@@ -56,6 +62,8 @@ public static class EventsModule
                 .UseSnakeCaseNamingConvention());
 
         services.AddScoped<IEventRepository, EventRepository>();
+        services.AddScoped<ITicketTypeRepository, TicketTypeRepository>();
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
 
         services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<EventsDbContext>());
     }
