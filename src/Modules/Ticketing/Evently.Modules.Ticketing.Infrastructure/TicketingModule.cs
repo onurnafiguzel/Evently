@@ -27,7 +27,7 @@ public static class TicketingModule
 
     public static void ConfigureConsumers(IRegistrationConfigurator registrationConfigurator)
     {
-        registrationConfigurator.AddConsumer<UserRegisteredEventConsumer>();
+        registrationConfigurator.AddConsumer<UserRegisteredIntegrationEventConsumer>();
     }
     private static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
